@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="dist/lib/javax.persistence-2.1.0.jar"/>
+	<classpathentry kind="lib" path="dist/lib/org.eclipse.persistence.antlr-2.5.2.jar"/>
+	<classpathentry kind="lib" path="dist/lib/org.eclipse.persistence.asm-2.5.2.jar"/>
+	<classpathentry kind="lib" path="dist/lib/org.eclipse.persistence.core-2.5.2.jar"/>
+	<classpathentry kind="lib" path="dist/lib/org.eclipse.persistence.jpa-2.5.2.jar"/>
+	<classpathentry kind="lib" path="dist/lib/org.eclipse.persistence.jpa.jpql-2.5.2.jar"/>
+	<classpathentry kind="lib" path="dist/Proyecto2daParte.jar"/>
+	<classpathentry kind="lib" path="lib/mysql-connector-java-8.0.18.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>

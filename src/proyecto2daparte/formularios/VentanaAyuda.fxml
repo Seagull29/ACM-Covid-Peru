@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="489.0" prefWidth="837.0" stylesheets="@estilos/frmprincipalEstilo.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proyecto2daparte.formularios.controladores.VentanaAyudaController">
+   <center>
+      <TabPane prefHeight="200.0" prefWidth="200.0" styleClass="TabPaneBase" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab text="Agregar/Editar Datos">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="TabPaneBase">
+                     <children>
+                        <Pane layoutX="14.0" layoutY="14.0" prefHeight="389.0" prefWidth="194.0" styleClass="TopPane">
+                           <children>
+                              <VBox alignment="CENTER" layoutX="1.0" layoutY="28.0" prefHeight="333.0" prefWidth="191.0" spacing="30.0">
+                                 <children>
+                                    <RadioButton fx:id="radAdd" minWidth="150.0" mnemonicParsing="false" text="Añadir Datos" textFill="WHITE">
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="radGrupoHelp" />
+                                       </toggleGroup>
+                                       <font>
+                                          <Font name="Dubai Regular" size="13.0" />
+                                       </font>
+                                    </RadioButton>
+                                    <RadioButton fx:id="radGrafFunc" minWidth="150.0" mnemonicParsing="false" text="Botones de Funcion" textFill="WHITE" toggleGroup="$radGrupoHelp">
+                                       <font>
+                                          <Font name="Dubai Regular" size="13.0" />
+                                       </font>
+                                    </RadioButton>
+                                    <RadioButton fx:id="radTable" minWidth="150.0" mnemonicParsing="false" text="Tabla de datos" textFill="WHITE" toggleGroup="$radGrupoHelp">
+                                       <font>
+                                          <Font name="Dubai Regular" size="13.0" />
+                                       </font>
+                                    </RadioButton>
+                                    <Button fx:id="btnOkayuda" mnemonicParsing="false" text="Ok" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="222.0" layoutY="14.0" prefHeight="389.0" prefWidth="593.0" styleClass="TopPane">
+                           <children>
+                              <Label fx:id="lblSelecionOpcion" layoutX="174.0" layoutY="177.0" text="Seleccione Una Opcion" textFill="WHITE" visible="false">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fx:id="help_AñadirDatos" fitHeight="287.0" fitWidth="348.0" layoutX="14.0" layoutY="51.0" visible="false">
+                                 <image>
+                                    <Image url="@../../Recursos/help_EntradadeDatos.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="lblHelpInfo" alignment="CENTER" contentDisplay="CENTER" layoutX="367.0" layoutY="7.0" prefHeight="378.0" prefWidth="224.0" textAlignment="JUSTIFY" textFill="WHITE" wrapText="true">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fx:id="help_Graficos1" fitHeight="138.0" fitWidth="358.0" layoutX="14.0" layoutY="14.0" visible="false">
+                                 <image>
+                                    <Image url="@../../Recursos/help_EntradadeGraficos.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="help_graficos2" fitHeight="159.0" fitWidth="353.0" layoutX="14.0" layoutY="185.0" visible="false">
+                                 <image>
+                                    <Image url="@../../Recursos/help_EntradadeGraficos2.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="helpFuncionBotones" fitHeight="365.0" fitWidth="113.0" layoutX="26.0" layoutY="12.0" visible="false">
+                                 <image>
+                                    <Image url="@../../Recursos/help_FuncionBotones.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </center>
+   <top>
+      <Pane prefHeight="43.0" prefWidth="837.0" styleClass="TopPane" BorderPane.alignment="CENTER" />
+   </top>
+</BorderPane>

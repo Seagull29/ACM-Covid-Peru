@@ -1,0 +1,28 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+.paneTop{
+    -fx-background-color: cadetblue;
+}
+.paneBot{
+    -fx-background-color: #235882;
+    -fx-background-image: url(galaxy.jpg);
+    -fx-background-size: 1080 720;
+}
+.paneTP{
+    -fx-opacity: 0.5;
+}
+.label{
+    -fx-text-color: black;
+}
+.button {
+    -fx-background-color: #0e325c;
+}
+.button:hover {
+    -fx-background-color: #00466e;
+    -fx-text-fill: white;
+}

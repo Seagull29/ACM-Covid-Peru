@@ -1,0 +1,62 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20/05/2020, 12:28:41 AM
+    Author     : USER
+*/
+
+.axis {
+	-fx-tick-label-fill: white;
+	-fx-font-family: Times New Roman;
+	-fx-font-size: 1.5em;
+}
+
+.axis-label {
+	-fx-text-fill: white;
+	-fx-font-family: Times New Roman;
+}
+
+.axis-tick-mark {
+	-fx-stroke: black;
+	-fx-stroke-width:2;
+}
+
+.chart-title {
+	-fx-text-fill: white;
+	-fx-font-famili: Times New Roman;
+}
+
+.chart-bar {
+    -fx-background-color: #659FD6;
+    -fx-border-color: rgba(0,168,355,0.3) rgba(0,168,355,0.3) 
+        transparent rgba(0,168,355,0.3);
+    -fx-background-radius: 0;
+    -fx-background-position: left center;
+}
+
+.chart-plot-background {
+    -fx-background-color: #AFCEE0;
+}
+
+.chart-pie-label-line {
+    -fx-stroke: white;
+    -fx-fill: white;
+}
+ 
+.chart-pie-label {
+    -fx-fill: white;
+    -fx-font-size: 1em;
+} 
+.chart-legend {
+   -fx-background-color: #C8CAFF;
+   -fx-stroke: #daa520;
+}
+.chart-legend-item-symbol {
+    -fx-shape: "M0 -3.5 v7 l 4 -3.5z";
+}
+
+.default-color0.chart-pie { -fx-pie-color: #8A4FEC ; }
+.default-color1.chart-pie { -fx-pie-color: #4979C8 ; }

@@ -1,0 +1,16 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+.pane1{
+    -fx-background-color: #1a2c4f;
+    -fx-background-position: center center;
+}
+.paneBot{
+    -fx-background-color: #235882;
+    -fx-background-image: url(galaxy.jpg);
+    -fx-background-size: 1080 720;
+}

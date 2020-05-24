@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" stylesheets="@estilos/frmprincipalEstilo.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proyecto2daparte.formularios.controladores.FrmPrincipalController">
+   <center>
+      <TabPane prefHeight="200.0" prefWidth="200.0" styleClass="TabPaneBase" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+            <Tab text="Entrada de Datos">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TabPane prefHeight="619.0" prefWidth="1280.0" style="-fx-tab-max-width: 100;" styleClass="TabPaneData" tabClosingPolicy="UNAVAILABLE" tabMinWidth="100.0">
+                          <tabs>
+                            <Tab fx:id="tpRegion" text="Region">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Pane layoutX="13.0" layoutY="380.0" prefHeight="196.0" prefWidth="525.0" styleClass="TopPane">
+                                             <children>
+                                                <Button fx:id="btnOKGrafType_DE" disable="true" layoutX="433.0" layoutY="130.0" minWidth="52.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="52.0" text="OK">
+                                                   <font>
+                                                      <Font name="Garamond" size="18.0" />
+                                                   </font>
+                                                </Button>
+                                                <Button fx:id="btnOKGraf_Cant_DE" disable="true" layoutX="434.0" layoutY="77.0" minWidth="52.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="52.0" text="OK">
+                                                   <font>
+                                                      <Font name="Garamond" size="18.0" />
+                                                   </font>
+                                                </Button>
+                                             </children>
+                                          </Pane>
+                                          <Pane layoutX="14.0" layoutY="10.0" prefHeight="361.0" prefWidth="524.0" styleClass="TopPane">
+                                             <children>
+                                                <VBox alignment="CENTER" layoutX="24.0" layoutY="51.0" prefHeight="500.0" prefWidth="177.0" spacing="33.0">
+                                                   <children>
+                                                      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" minWidth="200.0" text="Region:" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="Corbel" size="18.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" minWidth="200.0" text="Pruebas Moleculares:" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="Corbel" size="18.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" minWidth="200.0" text="Pruebas Rapidas:" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="Corbel" size="18.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" minWidth="200.0" text="Casos Totales:" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="Corbel" size="18.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" minWidth="200.0" text="Letalidad:" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="Corbel" size="18.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" minWidth="200.0" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="Corbel" size="18.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" minWidth="200.0" text="-" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="Corbel" size="18.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" minWidth="200.0" text="Cantidad de Graficos:" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="Corbel" size="18.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" minWidth="200.0" text="Tipo de Graficos:" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="Corbel" size="18.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                </VBox>
+                                                <VBox alignment="CENTER" layoutX="249.0" layoutY="51.0" prefHeight="500.0" prefWidth="150.0" spacing="30.0">
+                                                   <children>
+                                                      <TextField fx:id="txtRegion" />
+                                                      <TextField fx:id="txtPruebasMoleculares" />
+                                                      <TextField fx:id="txtPruebasRapidas" />
+                                                      <TextField fx:id="txtCasosTotales" />
+                                                      <TextField fx:id="txtLetalidad" />
+                                                      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" minWidth="151.0" prefHeight="22.0" prefWidth="151.0" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="Corbel" size="18.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <CheckBox fx:id="check_Graficos" mnemonicParsing="false" text="Mostrar Grafico" textFill="WHITE" />
+                                                      <ComboBox fx:id="cb_GrafCant_DE" disable="true" prefHeight="25.0" prefWidth="210.0" promptText="1, 2 o 3" />
+                                                      <ComboBox fx:id="cbGrafType_DE" disable="true" prefHeight="25.0" prefWidth="210.0" promptText="Lineas, Barras o Circular" />
+                                                   </children>
+                                                </VBox>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="159.0" layoutY="29.0" minWidth="100.0" text="Agregando datos de Region" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Corbel" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="lblGrafCant" alignment="CENTER" contentDisplay="CENTER" layoutX="396.0" layoutY="521.0" minWidth="125.0" prefHeight="37.0" prefWidth="125.0" textFill="WHITE" wrapText="true">
+                                                   <font>
+                                                      <Font name="Corbel" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </Pane>
+                                          <Pane layoutX="742.0" layoutY="10.0" prefHeight="571.0" prefWidth="524.0" styleClass="TopPane">
+                                             <children>
+                                                <TableView fx:id="tvTDatos" layoutX="12.0" layoutY="53.0" prefHeight="513.0" prefWidth="500.0">
+                                                   <columns>
+                                                      <TableColumn fx:id="tcRegion" prefWidth="103.0" text="Region" />
+                                                      <TableColumn fx:id="tcPruebasM" prefWidth="74.0" text="Pruebas M." />
+                                                      <TableColumn fx:id="tcPruebasR" prefWidth="74.0" text="Pruebas R." />
+                                                      <TableColumn fx:id="tcCasosT" prefWidth="88.0" text="Casos Totales" />
+                                                      <TableColumn fx:id="tcLetalidad" prefWidth="62.0" text="Letalidad" />
+                                                      <TableColumn fx:id="tcFecha" prefWidth="98.0" text="Fecha" />
+                                                   </columns>
+                                                </TableView>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="94.0" layoutY="20.0" minWidth="100.0" prefHeight="22.0" prefWidth="336.0" text="COVID-19 en PERÚ" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Corbel" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </Pane>
+                                          <Pane layoutX="560.0" layoutY="70.0" prefHeight="450.0" prefWidth="160.0" styleClass="TopPane">
+                                             <children>
+                                                <VBox alignment="CENTER" prefHeight="450.0" prefWidth="160.0" spacing="40.0">
+                                                   <children>
+                                                      <Button fx:id="btnListar_DE" minWidth="100.0" mnemonicParsing="false" onAction="#ListarEstadisticas" text="Listar">
+                                                         <font>
+                                                            <Font name="Garamond" size="18.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <Button fx:id="btnAgregar_DE" minWidth="100.0" mnemonicParsing="false" onAction="#AgregarEstadistica" text="Agregar">
+                                                         <font>
+                                                            <Font name="Garamond" size="18.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <Button fx:id="btnEliminar_DE" minWidth="100.0" mnemonicParsing="false" onAction="#EliminarEstadistica" text="Eliminar">
+                                                         <font>
+                                                            <Font name="Garamond" size="18.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <Button fx:id="btnEditar_DE" minWidth="100.0" mnemonicParsing="false" onAction="#EditarEstadistica" text="Editar">
+                                                         <font>
+                                                            <Font name="Garamond" size="18.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <Button fx:id="btnEncontrar_DE" minWidth="100.0" mnemonicParsing="false" onAction="#SeleccionarEstadistica" text="Seleccionar">
+                                                         <font>
+                                                            <Font name="Garamond" size="18.0" />
+                                                         </font>
+                                                      </Button>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                            <Tab fx:id="tpFallecidos" text="Fallecidos">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="162.0" prefWidth="184.0">
+                                       <children>
+                                          <Pane layoutX="13.0" layoutY="352.0" prefHeight="220.0" prefWidth="525.0" styleClass="TopPane">
+                                             <children>
+                                                <Button fx:id="btnOKGrafType_DEFallecidos" disable="true" layoutX="431.0" layoutY="134.0" minWidth="52.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="52.0" text="OK">
+                                                   <font>
+                                                      <Font name="Garamond" size="18.0" />
+                                                   </font>
+                                                </Button>
+                                                <Button fx:id="btnOKGraf_Cant_DEFallecidos" disable="true" layoutX="431.0" layoutY="78.0" minWidth="52.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="52.0" text="OK">
+                                                   <font>
+                                                      <Font name="Garamond" size="18.0" />
+                                                   </font>
+                                                </Button>
+                                             </children>
+                                          </Pane>
+                                          <Pane layoutX="14.0" layoutY="10.0" prefHeight="331.0" prefWidth="524.0" styleClass="TopPane">
+                                             <children>
+                                                <VBox alignment="CENTER" layoutX="24.0" layoutY="51.0" prefHeight="500.0" prefWidth="177.0" spacing="33.0">
+                                                   <children>
+                                                      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" minWidth="200.0" text="Etapa:" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="Corbel" size="18.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" minWidth="200.0" text="Sexo:" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="Corbel" size="18.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" minWidth="200.0" text="Región" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="Corbel" size="18.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" minWidth="200.0" text="Categoria" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="Corbel" size="18.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" minWidth="200.0" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="Corbel" size="18.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" minWidth="200.0" text="-" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="Corbel" size="18.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" minWidth="200.0" text="Cantidad de Graficos:" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="Corbel" size="18.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" minWidth="200.0" text="Tipo de Graficos:" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="Corbel" size="18.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                </VBox>
+                                                <VBox alignment="CENTER" layoutX="249.0" layoutY="51.0" prefHeight="500.0" prefWidth="150.0" spacing="30.0">
+                                                   <children>
+                                                      <ComboBox fx:id="cbEtapa_Fallecidos" prefWidth="150.0" promptText="Seleccione" />
+                                                      <ComboBox fx:id="cbSexo_Fallecidos" prefWidth="150.0" promptText="Seleccione" />
+                                                      <ComboBox fx:id="cbRegion_Fallecidos" prefWidth="150.0" promptText="Seleccione" />
+                                                      <ComboBox fx:id="cbCategoria_Fallecidos" prefWidth="150.0" promptText="Seleccione" />
+                                                      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" minWidth="157.0" prefHeight="22.0" prefWidth="157.0" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="Corbel" size="18.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <CheckBox fx:id="check_GraficosFallecidos" mnemonicParsing="false" text="Mostrar Grafico" textFill="WHITE" />
+                                                      <ComboBox fx:id="cb_GrafCant_DEFallecidos" disable="true" prefHeight="25.0" prefWidth="210.0" promptText="1, 2 o 3" />
+                                                      <ComboBox fx:id="cbGrafType_DEFallecidos" disable="true" prefHeight="25.0" prefWidth="210.0" promptText="Lineas, Barras o Circular" />
+                                                   </children>
+                                                </VBox>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="147.0" layoutY="29.0" minWidth="100.0" text="Agregando Datos de Fallecidos" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Corbel" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="lblGrafCant1" alignment="CENTER" contentDisplay="CENTER" layoutX="396.0" layoutY="521.0" minWidth="125.0" prefHeight="37.0" prefWidth="125.0" textFill="WHITE" wrapText="true">
+                                                   <font>
+                                                      <Font name="Corbel" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </Pane>
+                                          <Pane layoutX="560.0" layoutY="70.0" prefHeight="450.0" prefWidth="160.0" styleClass="TopPane">
+                                             <children>
+                                                <VBox alignment="CENTER" prefHeight="450.0" prefWidth="160.0" spacing="40.0">
+                                                   <children>
+                                                      <Button fx:id="btnListar_Fallecidos" minWidth="100.0" mnemonicParsing="false" onAction="#ListarEstadisticas" text="Listar">
+                                                         <font>
+                                                            <Font name="Garamond" size="18.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <Button fx:id="btnAgregar__Fallecidos" minWidth="100.0" mnemonicParsing="false" onAction="#AgregarEstadistica" text="Agregar">
+                                                         <font>
+                                                            <Font name="Garamond" size="18.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <Button fx:id="btnEliminar__Fallecidos" minWidth="100.0" mnemonicParsing="false" onAction="#EliminarEstadistica" text="Eliminar">
+                                                         <font>
+                                                            <Font name="Garamond" size="18.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <Button fx:id="btnEditar__Fallecidos" minWidth="100.0" mnemonicParsing="false" onAction="#EditarEstadistica" text="Editar">
+                                                         <font>
+                                                            <Font name="Garamond" size="18.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <Button fx:id="btnEncontrar__Fallecidos" minWidth="100.0" mnemonicParsing="false" onAction="#SeleccionarEstadistica" text="Seleccionar">
+                                                         <font>
+                                                            <Font name="Garamond" size="18.0" />
+                                                         </font>
+                                                      </Button>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </Pane>
+                                          <Pane layoutX="742.0" layoutY="10.0" prefHeight="571.0" prefWidth="524.0" styleClass="TopPane">
+                                             <children>
+                                                <TableView fx:id="tvTDatos1" layoutX="12.0" layoutY="53.0" prefHeight="513.0" prefWidth="500.0">
+                                                   <columns>
+                                                      <TableColumn fx:id="tcCategoria" prefWidth="146.0" text="Categoria" />
+                                                      <TableColumn fx:id="tcEtapa" prefWidth="120.0" text="Etapa" />
+                                                      <TableColumn fx:id="tcSexo" prefWidth="73.0" text="Sexo" />
+                                                      <TableColumn fx:id="tcRegion_Fallecidos" prefWidth="160.0" text="Region" />
+                                                   </columns>
+                                                </TableView>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="94.0" layoutY="20.0" minWidth="100.0" prefHeight="22.0" prefWidth="336.0" text="COVID-19 en PERÚ" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Corbel" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                          </tabs>
+                        </TabPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="tpGraficos" text="Salida de Graficos">
+               <content>
+                  <BorderPane fx:id="bpGrafico" prefHeight="200.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+            <Tab text="Salida de Graficos">
+               <content>
+                  <BorderPane fx:id="bpGrafico2" prefHeight="200.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+          <Tab text="x">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Pane layoutX="28.0" layoutY="17.0" prefHeight="600.0" prefWidth="346.0" styleClass="TopPane">
+                           <children>
+                              <VBox alignment="CENTER" layoutX="23.0" layoutY="100.0" prefHeight="400.0" prefWidth="150.0" spacing="35.0">
+                                 <children>
+                                    <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" minWidth="120.0" text="Grafico N*:" textFill="WHITE">
+                                       <font>
+                                          <Font name="Corbel" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" layoutX="182.0" layoutY="100.0" prefHeight="400.0" prefWidth="150.0" spacing="30.0">
+                                 <children>
+                                    <ComboBox fx:id="cbGraficoN_GE" prefWidth="150.0" />
+                                 </children>
+                              </VBox>
+                              <Button fx:id="btnSeleccionar_GE" layoutX="122.0" layoutY="394.0" minWidth="100.0" mnemonicParsing="false" text="Seleccionar">
+                                 <font>
+                                    <Font name="Garamond" size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="603.0" layoutY="17.0" prefHeight="600.0" prefWidth="655.0" styleClass="TopPane">
+                           <children>
+                              <HBox alignment="CENTER" layoutX="44.0" layoutY="14.0" prefHeight="51.0" prefWidth="568.0" spacing="40.0">
+                                 <children>
+                                    <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" minWidth="120.0" text="Titulo de datos" textFill="WHITE">
+                                       <font>
+                                          <Font name="Corbel" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" minWidth="120.0" text="Tipo de Grafico" textFill="WHITE">
+                                       <font>
+                                          <Font name="Corbel" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" minWidth="120.0" text="numero de Grafico" textFill="WHITE">
+                                       <font>
+                                          <Font name="Corbel" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <Pane layoutX="44.0" layoutY="65.0" prefHeight="515.0" prefWidth="564.0" style="-fx-background-color: gray;" styleClass="GraphicPane" />
+                           </children>
+                        </Pane>
+                        <Pane layoutX="416.0" layoutY="17.0" prefHeight="600.0" prefWidth="160.0" styleClass="TopPane">
+                           <children>
+                              <VBox alignment="CENTER" layoutX="22.0" layoutY="71.0" prefHeight="459.0" prefWidth="116.0" spacing="40.0">
+                                 <children>
+                                    <Button fx:id="btnLimpiar_GE" minWidth="100.0" mnemonicParsing="false" text="Limpiar">
+                                       <font>
+                                          <Font name="Garamond" size="18.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="btnMostrar_GE" minWidth="100.0" mnemonicParsing="false" text="Mostrar">
+                                       <font>
+                                          <Font name="Garamond" size="18.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                              <Label fx:id="lblDatoSeleccionado" alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="14.0" minWidth="120.0" prefHeight="169.0" prefWidth="120.0" text="dato" textAlignment="JUSTIFY" textFill="WHITE" wrapText="true">
+                                 <font>
+                                    <Font name="Corbel" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </center>
+   <top>
+      <Pane prefHeight="64.0" prefWidth="1280.0" styleClass="TopPane" stylesheets="@estilos/frmprincipalEstilo.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="lblTitulo" alignment="CENTER" contentDisplay="CENTER" layoutX="456.0" layoutY="14.0" prefHeight="37.0" prefWidth="369.0" text="T" textFill="WHITE">
+               <font>
+                  <Font name="Georgia" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnAyuda_DE" layoutX="14.0" layoutY="18.0" minWidth="100.0" mnemonicParsing="false" text="Ayuda">
+               <font>
+                  <Font name="Garamond" size="18.0" />
+               </font>
+            </Button>
+         </children></Pane>
+   </top>
+</BorderPane>
